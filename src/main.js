@@ -29,6 +29,7 @@ import './fake-db/index.js';
 Vue.component('apexchart', VueApexCharts);
 
 Vue.use(octaviaKit);
+Vue.use(store);
 Vue.config.productionTip = false;
 // if (process.env.NODE_ENV === "development") {
 //   makeServer();

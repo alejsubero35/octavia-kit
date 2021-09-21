@@ -2,7 +2,7 @@ import firebase from "firebase/app";
 import "firebase/auth";
 import { UserLogin } from '../interfaces/Auth';
 import { UserToken } from '../interfaces/UserToken';
-import { http } from '@/utils/http';
+
 
 export default {
   state: {

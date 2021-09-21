@@ -1,5 +1,6 @@
 import Vuex from 'vuex'
 import Vue from 'vue'
+import loginAuth from './modules/loginAuth'
 import largeSidebar from './modules/largeSidebar'
 import compactSidebar from './modules/compactSidebar'
 import chat from './modules/chat'
@@ -9,7 +10,7 @@ import invoice from './modules/invoice'
 import cart from './modules/cart'
 import verticalSidebar from './modules/verticalSidebar'
 import scrumboard from './modules/scrumboard'
-import loginAuth from './modules/loginAuth'
+
 
 // Load Vuex
 Vue.use(Vuex)
@@ -27,6 +28,5 @@ export default new Vuex.Store({
     cart,
     verticalSidebar,
     scrumboard,
-    loginAuth
   }
 })
