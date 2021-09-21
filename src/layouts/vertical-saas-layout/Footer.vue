@@ -15,13 +15,12 @@
             target="_blank"
             depressed
             color="warning"
-            >Buy Octavia-2.5.0</v-btn
-          >
+          >Buy Octavia</v-btn>
         </div>
         <div>
           <strong class="text--disabled">
             © UI Lib {{ new Date().getFullYear() }}-{{
-              new Date().getFullYear() + 1
+            new Date().getFullYear() + 1
             }}
           </strong>
         </div>

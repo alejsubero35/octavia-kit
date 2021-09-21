@@ -36,7 +36,7 @@
           </v-list-item-avatar>
 
           <v-list-item-title class="text-18 text-uppercase text-default"
-            >Octavia</v-list-item-title
+            >Filmarket</v-list-item-title
           >
           <v-scroll-x-transition>
             <v-btn icon @click.stop="toggleSidebar">
@@ -103,7 +103,7 @@
         </v-list-item>
       </v-list>
 
-      <v-list>
+      <v-list class="py-0">
         <template v-for="(item, i) in computedItems">
           <div
             :key="item.subheader"

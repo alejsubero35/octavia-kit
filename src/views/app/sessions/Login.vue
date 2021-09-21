@@ -104,9 +104,7 @@ export default {
             ],
             nameRules: [
                 (v) => !!v || 'Password is required',
-                (v) =>
-                    (v && v.length <= 10) ||
-                    'Name must be less than 10 characters'
+               
             ]
         }
     },

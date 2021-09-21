@@ -1,4 +1,5 @@
 <template>
+<div class="page-wrap">
     <div class="ma-auto">
         <div class="d-flex align-center justify-center mb-4">
             <v-avatar tile size="120" class="mr-4">
@@ -18,6 +19,7 @@
             >
         </div>
     </div>
+</div>
 </template>
 <script>
 export default {
@@ -29,6 +31,14 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+.page-wrap {
+    background-color: #242939 !important;
+    display: flex;
+    align-items: center;
+    padding: 40px 1rem;
+    height: 100%;
+    min-height: 100vh;
+}
 .error-title {
     h1 {
         font-size: 5rem;

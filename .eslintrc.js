@@ -11,4 +11,11 @@ module.exports = {
     'no-console': 'off',
     'no-debugger': 'off',
   },
+  settings: {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
 }

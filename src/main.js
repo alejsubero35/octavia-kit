@@ -13,21 +13,20 @@
  * ============================
  */
 
-import Vue from "vue";
-import App from "./App.vue";
-import router from "./router";
-import store from "./store";
+import Vue from 'vue';
+import App from './App.vue';
+import router from './router';
+import store from './store';
 
-import vuetify from "./plugins/vuetify";
-import "./plugins";
+import vuetify from './plugins/vuetify';
+import './plugins';
 
-import octaviaKit from "@/plugins/octavia.kit";
-
-// import VueApexCharts from 'vue-apexcharts';
+import octaviaKit from '@/plugins/octavia.kit';
+import VueApexCharts from 'vue-apexcharts';
 // mock
-import "./fake-db/index.js";
+import './fake-db/index.js';
 
-// Vue.component('apexchart', VueApexCharts);
+Vue.component('apexchart', VueApexCharts);
 
 Vue.use(octaviaKit);
 Vue.config.productionTip = false;
@@ -39,5 +38,6 @@ new Vue({
   store,
   router,
   vuetify,
-  render: h => h(App)
-}).$mount("#app");
+  render: (h) => h(App),
+}).$mount('#app');
+

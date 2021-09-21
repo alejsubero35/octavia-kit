@@ -9,9 +9,11 @@ import invoice from './modules/invoice'
 import cart from './modules/cart'
 import verticalSidebar from './modules/verticalSidebar'
 import scrumboard from './modules/scrumboard'
+import loginAuth from './modules/loginAuth'
 
 // Load Vuex
 Vue.use(Vuex)
+
 
 // Create store
 export default new Vuex.Store({
@@ -25,5 +27,6 @@ export default new Vuex.Store({
     cart,
     verticalSidebar,
     scrumboard,
-  },
+    loginAuth
+  }
 })

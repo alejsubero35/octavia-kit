@@ -18,7 +18,7 @@ import VuePerfectScrollbar from "vue-perfect-scrollbar";
 // import Vuebar from "vuebar";
 
 // ApexCharts
-// import "@/plugins/apexChart.js";
+import "@/plugins/apexChart.js";
 
 // theme Main scss
 import "@/assets/scss/octavia-design-system/octavia-design-system.scss";
@@ -35,9 +35,8 @@ import axios from "axios";
 import VueAxios from "vue-axios";
 
 // form-Wizard
-
-// import VueFormWizard from "vue-form-wizard";
-// import "vue-form-wizard/dist/vue-form-wizard.min.css";
+import VueFormWizard from "vue-form-wizard";
+import "vue-form-wizard/dist/vue-form-wizard.min.css";
 
 import VueMeta from "vue-meta";
 import firebase from "firebase/app";
@@ -65,7 +64,7 @@ firebase.initializeApp(firebaseConfig);
 export default {
   install(Vue) {
     Vue.use(VueMeta);
-    // Vue.use(VueFormWizard);
+    Vue.use(VueFormWizard);
     // Vue.use(InstantSearch)
 
     Vue.use(VueAxios, axios);

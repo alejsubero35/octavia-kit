@@ -1,37 +1,72 @@
 <template>
-    <div class="ma-auto">
-        <div class="d-flex align-center justify-center mb-4">
-            <v-avatar size="120" class="mr-4">
-                <img src="@/assets/images/svg/error.svg" alt="" />
-            </v-avatar>
-            <div class="error-title">
-                <h1 class="font-weight-bold mb-0">404</h1>
-                <div class="text-18 font-weight-bold">Page Not Found</div>
-            </div>
-        </div>
-        <div class="d-flex justify-center flex-wrap">
-            <v-btn small class="ma-2" outlined color="primary"
-                >Back To Dashboard</v-btn
-            >
-            <v-btn small class="ma-2" outlined color="danger"
-                >Report the problem</v-btn
-            >
+    <div class="page-wrap">
+        <div class="session-form-hold">
+            <base-card>
+                <v-card-text class="text-center">
+                    <v-avatar size="60" class="mb-4">
+                        <img src="@/assets/images/logo.svg" alt="" />
+                    </v-avatar>
+                    <h5>Lets get started</h5>
+                    <h6 class="text--disabled font-weight-medium mb-10">
+                        Sign up to use our service
+                    </h6>
+                    <v-text-field label="Email" />
+
+                    <v-text-field
+                        :append-icon="show ? 'mdi-eye' : 'mdi-eye-off'"
+                        :type="show ? 'text' : 'password'"
+                        name="input-10-2"
+                        label="Password"
+                        value="Pa"
+                        @click:append="show = !show"
+                    ></v-text-field>
+                
+                    <v-checkbox
+                        v-model="checkbox1"
+                        label="I have read and agree to the terms of service."
+                    ></v-checkbox>
+                    <v-btn class="mb-4" block color="primary" dark
+                        >Sign Up</v-btn
+                    >
+                    <div class="d-flex justify-around flex-wrap">
+                        <v-btn text small color="primary"
+                            >Sign in to existing account</v-btn
+                        >
+                    </div>
+                </v-card-text>
+            </base-card>
         </div>
     </div>
 </template>
 <script>
 export default {
-    name: 'SignIn',
+    name: 'SignUp',
     metaInfo: {
         // title will be injected into parent titleTemplate
-        title: 'SignIn'
+        title: 'SignUp'
+    },
+    data() {
+        return {
+            show: false,
+            password: 'Password',
+            checkbox1: true,
+            checkbox2: false
+        }
     }
 }
 </script>
 <style lang="scss" scoped>
-.error-title {
-    h1 {
-        font-size: 5rem;
-    }
+.page-wrap {
+    background-color: #242939 !important;
+    display: flex;
+    align-items: center;
+    padding: 40px 1rem;
+    height: 100%;
+    min-height: 100vh;
+}
+.session-form-hold {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
 }
 </style>

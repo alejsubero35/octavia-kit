@@ -25,7 +25,7 @@
       class="h-100 rtl-ps-none ps scroll"
       style="height: 100%"
     >
-      <v-list dense nav>
+      <v-list  nav >
         <v-list-item class="px-0">
           <v-list-item-avatar>
             <v-img
@@ -67,7 +67,7 @@
             </v-btn>
           </v-scroll-x-transition>
         </v-list-item>
-        <v-list-item class="pa-1" two-line :class="miniVariant && 'px-1'">
+          <v-list-item class="pa-1" two-line :class="miniVariant && 'px-1'">
           <v-list-item-avatar
             class="ml-n1"
             min-width="40"
@@ -101,9 +101,10 @@
             </v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
+      
       </v-list>
 
-      <v-list>
+      <v-list class="py-0">
         <template v-for="(item, i) in computedItems">
           <div
             :key="item.subheader"

@@ -43,7 +43,7 @@
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
 
-      <v-chip pill class="transparent py-5" @click="userDrawer = !userDrawer">
+      <v-chip pill class="transparent rounded-pill py-6" @click="userDrawer = !userDrawer">
         Hi, Watson
         <v-avatar class="ml-2">
           <v-img src="@/assets/images/faces/1.jpg"></v-img>
@@ -228,7 +228,7 @@ export default {
     logoutUser() {
       this.signOut();
 
-      this.$router.push("/app/sessions/sign-in-two");
+      this.$router.push("/app/sessions/login");
     }
   }
 };
